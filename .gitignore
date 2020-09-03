@@ -1,0 +1,8 @@
+*.exe
+*.lock
+package-lock.json
+node_modules
+/downloads
+/tools
+*.log
+.env
