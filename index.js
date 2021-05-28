@@ -195,6 +195,6 @@ app.listen(12345, async () => {
 });
 
 function getAddress(address) {
-	if(address === "::1" || "localhost" || "127.0.0.1") return "local address";
+	if(["::1", "localhost", "127.0.0.1"].includes(address)) return "local address";
 	else return address.slice(7);
 }
